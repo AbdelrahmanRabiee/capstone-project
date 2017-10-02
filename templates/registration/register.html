@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="container">
+           <div class="social_login">
+                <h3>Sign up</h3>
+                <span>with your social media</span>
+                <div class="social">
+                    <a href="{% url 'social:begin' 'facebook' %}"><i class="fa fa-facebook"></i></a>
+                    <a href="{% url 'social:begin' 'github' %}"><i class="fa fa-github"></i></a>
+                    <a href="{% url 'social:begin' 'twitter' %}"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <p>or</p>
+            <div class="register">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+                    <input type="submit" value="Login" class="submit">
+                </form>
+            </div>
+            <div class="links">
+                <a href="/accounts/login/" class="a">Already Register? sign in</a>
+                <a href="" class="a">Terms of service</a>
+            </div>
+            
+        </div>
+
+{% endblock content %}
