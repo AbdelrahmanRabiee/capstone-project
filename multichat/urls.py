@@ -30,7 +30,7 @@ urlpatterns = [
     url(r'^accounts/login/$',login_view),
     url(r'^logout/$',logout_view,),
     url(r'^dbdump/$',dbdump),
-    url(r'^$',home),
+    url(r'^inbox/$',home),
     url(r'^send-message/$',send_message),
     url(r'^accounts/register/$',register),
     url(r'^accounts/profile/$',home),
