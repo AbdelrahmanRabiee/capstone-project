@@ -11,14 +11,14 @@ from django.contrib.auth.models import User
 def login_view(request):
     error = None
     if request.user.is_authenticated:
-        return HttpResponseRedirect("/inbox/")
+        return HttpResponseRedirect("/")
     else:
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return HttpResponseRedirect("/inbox/")
+            return HttpResponseRedirect("/")
         else:
             error = 'username or password is incorrect'
 
@@ -38,7 +38,9 @@ def logout_view(request):
 
 def home(request):
     if request.user.is_authenticated:
-        queryset = Message.objects.filter(reciever__username__iexact = request.user)
+       # queryset = Message.objects.filter(reciever__username__iexact = request.user)
+        queryset = Message.objects.all()
+
         context = {'user': request.user, 'object_list': queryset}
 
         template_name = 'messages.html'
