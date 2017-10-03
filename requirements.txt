@@ -10,7 +10,7 @@ Beaker==1.5.4
 beautifulsoup4==4.6.0
 
 
-buildozer==0.34.dev0
+
 bzr==2.7.0
 CCColUtils==1.5
 cffi==1.9.1
