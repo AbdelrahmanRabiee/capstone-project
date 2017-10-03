@@ -157,8 +157,8 @@ STATICFILES_DIRS = [
     #'/home/Mr_Sico/pythonDjango/multichat/multichat/static/',
 ]
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_cdn")
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"media_cdn")
+#STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_cdn")
+#MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"media_cdn")
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_REPLACE_HTTPS_REFERER      = True
