@@ -1,0 +1,94 @@
+.contentMessages{
+   width:1000px;
+   margin:50px auto;
+   padding:25px;
+   border:1px solid #089;
+   border-radius:15px;
+}
+.linksLog{
+   width:1000px;
+   margin:0 auto;
+   padding:0px 25px
+}
+.rightLink{
+   text-decoration:none;
+   float:right;
+   margin-right:25px;
+}
+.leftLink{
+   text-decoration:none;
+   float:left;
+   margin-left:25px;
+}
+.contentMessages{
+ font-size:20px;
+}
+.contentMessages ul{
+  max-width: 800px;
+  max-height: 200px;
+  background: #089;
+  padding: 10px;
+  overflow: auto;
+  color:#fff;
+  border: 1px solid #089;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #055;
+  margin:10px auto
+}
+.contentMessages strong{
+  float:right;
+  color:#000;
+  font-weight:bold;
+
+}
+
+
+/**************************Send Message Page Style****************************/
+
+
+.sendMsg{
+   width:1000px;
+   margin:50px auto;
+   padding:50px;
+   border:1px solid #089;
+   border-radius:15px;
+}
+.sendMsg form{margin-left:230px}
+.sendMsg form>textarea
+{
+    padding: 10px;
+    border-radius: 5px;
+    border:.5px solid #089;
+    margin-top: 10px;
+}
+.sendMsg form>textarea
+{
+    font-size: 20px;
+    display: block;
+    width: 65%;
+}
+.sendMsg form>input{
+    width:525px
+}
+.sendMsg form>select{width: 450px;}
+
+/****************************Password Rest Page Style********************************/
+
+.forgetPass{
+   width:1000px;
+   margin:50px auto;
+   padding:50px;
+   border:1px solid #089;
+   border-radius:15px;
+}
+.forgetPass form p{
+   margin:0 auto;
+   padding:10px
+}
+.forgetPass form>input{width:60%}
+.forgetPass form button{
+   padding:10px;
+   margin:10px;
+}
+
+.textMSG{margin:10px}
