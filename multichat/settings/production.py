@@ -152,7 +152,9 @@ SOCIAL_AUTH_GITHUB_SECRET = 'fb830cde4704674e47f829cb7dc6f48e0f0a205b'
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL ="/static/"
-STATICFILES_DIRS = os.path.join(BASE_DIR, "static")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 STATIC_ROOT = os.path.join("static_cdn")
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
