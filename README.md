@@ -1,1 +1,1 @@
-# capstone-project
+this project i have created after two months of learning django , its very very simple but when i created it i was so proud of my great work . this project is enable users to send and recieve messages it was a capstone project for coursera as a graduation of cybersecurity track
